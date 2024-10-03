@@ -36,6 +36,11 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
 
+  # An SVG rendering and widget library for Flutter, which allows painting
+  flutter_svg: ^2.0.10+1
+  # A flutter plugin for adapting screen and font size.
+  flutter_screenutil: ^5.9.3
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
