@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:med_app/core/theme/text_styles.dart';
 import 'package:med_app/features/onboarding/presentation/widgets/doctor_image_and_text.dart';
+import 'package:med_app/features/onboarding/presentation/widgets/getting_started_button.dart';
 import 'package:med_app/features/onboarding/presentation/widgets/title_and_logo.dart';
 
 class OnBoardingView extends StatelessWidget {
@@ -37,15 +38,7 @@ class OnBoardingView extends StatelessWidget {
               SizedBox(
                 height: 20.h,
               ),
-              Padding(
-                padding: EdgeInsets.symmetric(horizontal: 30),
-                child: TextButton(
-                    onPressed: () {},
-                    child: Text(
-                      "Get Started",
-                      style: TextStyles.fontInter16w600White,
-                    )),
-              )
+              GettingStartedButton()
             ],
           ),
         )),
