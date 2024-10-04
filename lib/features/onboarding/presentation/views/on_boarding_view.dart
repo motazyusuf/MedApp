@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:med_app/core/theme/text_styles.dart';
+import 'package:med_app/features/onboarding/presentation/widgets/doctor_image_and_text.dart';
 import 'package:med_app/features/onboarding/presentation/widgets/title_and_logo.dart';
 
 class OnBoardingView extends StatelessWidget {
@@ -19,30 +19,32 @@ class OnBoardingView extends StatelessWidget {
           padding: EdgeInsets.only(top: 30.h, bottom: 30.h),
           child: Column(
             children: [
-              TitleAndLogo(),
+              const TitleAndLogo(),
               SizedBox(
                 height: 70.h,
               ),
-              Stack(
-                children: [
-                  // Background Logo
-                  SvgPicture.asset("assets/SVGs/backgroundLogoSVG.svg"),
-
-                  // Doctor Image & Fade
-                  Container(
-                      foregroundDecoration: BoxDecoration(
-                        gradient: LinearGradient(
-                          colors: [Colors.white, Colors.white.withOpacity(0.0)],
-                          begin: Alignment.bottomCenter,
-                          end: Alignment.topCenter,
-                          stops: const [0.11, 0.4],
-                        ),
-                      ),
-                      child:
-                          Image.asset("assets/images/onboarding_doctor.png")),
-
-                  // Text
-                ],
+              const DoctorImageAndText(),
+              Text(
+                "Manage and "
+                "schedule all"
+                " of your medical"
+                " appointments easily\n"
+                " with Docdoc to get "
+                "a new experience.",
+                textAlign: TextAlign.center,
+                style: TextStyles.fontInter11w400Grey,
+              ),
+              SizedBox(
+                height: 20.h,
+              ),
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: 30),
+                child: TextButton(
+                    onPressed: () {},
+                    child: Text(
+                      "Get Started",
+                      style: TextStyles.fontInter16w600White,
+                    )),
               )
             ],
           ),

@@ -21,5 +21,12 @@ class ApplicationThemeManager {
       backgroundColor: ColorPalette.appBarColor,
       iconTheme: IconThemeData(color: ColorPalette.appBarItemsColor),
     ),
+    textButtonTheme: TextButtonThemeData(
+      style: ButtonStyle(
+          shape: WidgetStateProperty.all(
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(16))),
+          backgroundColor: WidgetStateProperty.all(ColorPalette.accentColor),
+          minimumSize: WidgetStateProperty.all(Size(double.infinity, 52))),
+    ),
   );
 }
