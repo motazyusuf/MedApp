@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:med_app/core/configurations/pages_routes.dart';
 import 'package:med_app/core/theme/text_styles.dart';
 
 class GettingStartedButton extends StatelessWidget {
@@ -9,7 +10,9 @@ class GettingStartedButton extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: 30),
       child: TextButton(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pushReplacementNamed(context, PagesRoutes.loginView);
+          },
           child: Text(
             "Get Started",
             style: TextStyles.fontInter16w600White,
