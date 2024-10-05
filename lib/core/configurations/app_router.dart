@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:med_app/core/configurations/pages_routes.dart';
 import 'package:med_app/features/login/presentation/views/login_view.dart';
-
-import '../../features/onboarding/presentation/views/on_boarding_view.dart';
+import 'package:med_app/features/onboarding/views/on_boarding_view.dart';
 
 class AppRouter {
   static Route<dynamic> onGenerateRoute(RouteSettings settings) {

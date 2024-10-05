@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:med_app/core/theme/text_styles.dart';
-import 'package:med_app/features/onboarding/presentation/widgets/doctor_image_and_text.dart';
-import 'package:med_app/features/onboarding/presentation/widgets/getting_started_button.dart';
-import 'package:med_app/features/onboarding/presentation/widgets/title_and_logo.dart';
+import 'package:med_app/features/onboarding/widgets/doctor_image_and_text.dart';
+import 'package:med_app/features/onboarding/widgets/getting_started_button.dart';
+import 'package:med_app/features/onboarding/widgets/title_and_logo.dart';
 
 class OnBoardingView extends StatelessWidget {
   const OnBoardingView({super.key});
