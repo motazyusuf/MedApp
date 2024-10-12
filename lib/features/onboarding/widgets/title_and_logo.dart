@@ -17,7 +17,7 @@ class TitleAndLogo extends StatelessWidget {
         ),
         Text(
           "Docdoc",
-          style: TextStyles.font24w700Black,
+          style: TextStyles.font24BlackBoldest,
         )
       ],
     );
