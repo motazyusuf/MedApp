@@ -4,28 +4,28 @@ import 'color_palette.dart';
 
 class ApplicationThemeManager {
   static ThemeData theme = ThemeData(
-    hintColor: ColorPalette.appBarItemsColor,
+    // hintColor: ColorPalette.appBarItemsColor,
     colorScheme: ColorScheme(
         brightness: Brightness.dark,
-        primary: ColorPalette.accentColor,
+        primary: ColorPalette.mainBlue,
         onPrimary: Colors.white,
         secondary: Colors.cyan,
         onSecondary: Colors.white,
         error: Colors.red,
         onError: Colors.white,
-        surface: ColorPalette.accentColor,
+        surface: ColorPalette.mainBlue,
         onSurface: Colors.white),
-    focusColor: ColorPalette.accentColor,
-    scaffoldBackgroundColor: ColorPalette.backgroudColor,
-    appBarTheme: AppBarTheme(
-      backgroundColor: ColorPalette.appBarColor,
-      iconTheme: IconThemeData(color: ColorPalette.appBarItemsColor),
-    ),
+    focusColor: ColorPalette.mainBlue,
+    scaffoldBackgroundColor: ColorPalette.backgroundColor,
+    // appBarTheme: AppBarTheme(
+    //   backgroundColor: ColorPalette.appBarColor,
+    //   iconTheme: IconThemeData(color: ColorPalette.appBarItemsColor),
+    // ),
     textButtonTheme: TextButtonThemeData(
       style: ButtonStyle(
           shape: WidgetStateProperty.all(
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(16))),
-          backgroundColor: WidgetStateProperty.all(ColorPalette.accentColor),
+          backgroundColor: WidgetStateProperty.all(ColorPalette.mainBlue),
           minimumSize: WidgetStateProperty.all(Size(double.infinity, 52))),
     ),
   );

@@ -33,7 +33,7 @@ class OnBoardingView extends StatelessWidget {
                 " with Docdoc to get "
                 "a new experience.",
                 textAlign: TextAlign.center,
-                style: TextStyles.fontInter11GreyRegular,
+                style: MyTextStyles.fontInter11DarkGreyRegular,
               ),
               SizedBox(
                 height: 20.h,
