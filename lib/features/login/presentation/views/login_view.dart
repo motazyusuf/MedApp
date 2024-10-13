@@ -108,8 +108,10 @@ class _LoginViewState extends State<LoginView> {
                         "Login",
                         style: MyTextStyles.fontInter16WhiteSemiBold,
                       )),
+
                   verticalSpace(15),
                   TermsAndConditionText(),
+
                   verticalSpace(20),
                   SignUpText(),
                 ],
