@@ -4,7 +4,6 @@ import 'color_palette.dart';
 
 class ApplicationThemeManager {
   static ThemeData theme = ThemeData(
-    // hintColor: ColorPalette.appBarItemsColor,
     colorScheme: ColorScheme(
         brightness: Brightness.dark,
         primary: ColorPalette.mainBlue,
@@ -17,10 +16,6 @@ class ApplicationThemeManager {
         onSurface: Colors.white),
     focusColor: ColorPalette.mainBlue,
     scaffoldBackgroundColor: ColorPalette.backgroundColor,
-    // appBarTheme: AppBarTheme(
-    //   backgroundColor: ColorPalette.appBarColor,
-    //   iconTheme: IconThemeData(color: ColorPalette.appBarItemsColor),
-    // ),
     textButtonTheme: TextButtonThemeData(
       style: ButtonStyle(
           shape: WidgetStateProperty.all(

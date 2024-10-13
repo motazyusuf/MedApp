@@ -21,7 +21,7 @@ class MyTextFormField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
-      style: MyTextStyles.fontInter16DarkGreyMedium,
+      style: MyTextStyles.fontInter14DarkBlueMedium,
       obscureText: isObsecure ?? false,
       decoration: InputDecoration(
         suffixIcon: suffixIcon ?? null,
