@@ -10,10 +10,12 @@ class MyTextFormField extends StatelessWidget {
       required this.hintText,
       this.backgroundColor,
       this.hintTextStyle,
+      required this.controller,
       this.suffixIcon});
 
   bool? isObsecure;
   String hintText;
+  TextEditingController controller;
   Color? backgroundColor;
   TextStyle? hintTextStyle;
   Widget? suffixIcon;
@@ -21,6 +23,7 @@ class MyTextFormField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      controller: controller,
       style: MyTextStyles.fontInter14DarkBlueMedium,
       obscureText: isObsecure ?? false,
       decoration: InputDecoration(
